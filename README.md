@@ -1,74 +1,119 @@
 # ML-Powered-CRM-Dashboard
 
-## Project Overview
+## Problem Statement
 
-ML-Powered-CRM-Dashboard is an end-to-end Machine Learning project that helps businesses analyze customers, predict lead conversions, forecast sales, and segment customers for better decision making.
+Businesses often struggle to identify potential customers, forecast future sales, and understand customer behavior. This project provides an ML-powered CRM dashboard that helps organizations make data-driven decisions through customer analytics, lead conversion prediction, sales forecasting, and customer segmentation.
 
-The dashboard is built using Streamlit and integrates multiple machine learning models into a single interactive CRM platform.
+---
 
-## Features
+## Dataset Details
 
-- Lead Conversion Prediction
-- Sales Forecasting
-- Customer Segmentation
-- Interactive Streamlit Dashboard
-- Business KPI Visualization
-- Data-driven Customer Insights
+Dataset: CRM Customer Dataset
 
-## Tech Stack
+Features include:
 
-- Python
-- Streamlit
-- Pandas
-- NumPy
-- Scikit-Learn
-- Plotly
-- Joblib
+* Customer Age
+* Annual Income
+* Purchase Frequency
+* Spending Score
+* Engagement Metrics
+* Lead Information
+* Sales Data
 
-## Project Modules
+The dataset was preprocessed using data cleaning, handling missing values, feature selection, and normalization techniques.
+
+---
+
+## Machine Learning Approach
 
 ### 1. Lead Conversion Prediction
 
-Predicts whether a lead is likely to convert into a customer based on:
-- Age
-- Income
-- Calls Made
-- Website Visits
+Objective: Predict whether a lead will convert into a customer.
 
-Provides:
-- Conversion Prediction
-- Lead Summary
-- Lead KPIs
-- Lead Insights Visualization
-
----
+* Algorithm: Logistic Regression
+* Input Features: Customer demographics and engagement metrics
+* Output: Converted / Not Converted
 
 ### 2. Sales Forecasting
 
-Predicts future sales based on historical business data.
+Objective: Forecast future sales trends.
 
-Provides:
-- Sales Prediction
-- Sales KPIs
-- Sales Trend Analysis
-- Business Insights
-
----
+* Algorithm: Linear Regression
+* Input Features: Historical sales data
+* Output: Predicted Sales
 
 ### 3. Customer Segmentation
 
-Classifies customers into different segments using Machine Learning.
+Objective: Group customers into different segments.
 
-Customer Types:
-- High Value Customer
-- Medium Value Customer
-- Low Value Customer
+* Algorithm: K-Means Clustering
+* Segments:
 
-Provides:
-- Customer Classification
-- Customer Summary
-- Business KPIs
-- Segment Distribution Analysis
+  * High Value Customers
+  * Medium Value Customers
+  * Low Value Customers
+
+---
+
+## Model Performance
+
+### Lead Conversion Prediction
+
+* Accuracy: 85%
+* Precision: 82.98%
+* Recall: 63.93%
+* F1 Score: 72.22%
+
+### Sales Forecasting
+
+* R² Score: 1
+* Mean Absolute Error (MAE):  5.95 × 10⁻²²
+
+### Customer Segmentation
+
+* Number of Clusters: 3
+* Business Categories:
+
+  * High Value
+  * Medium Value
+  * Low Value
+
+---
+
+## Technology Stack
+
+* Python
+* Pandas
+* NumPy
+* Scikit-Learn
+* Plotly
+* Streamlit
+* Joblib
+
+---
+
+## Setup Instructions
+
+### Clone Repository
+
+```bash
+git clone https://github.com/jayupadhyay27/ML-Powered-CRM-Dashboard.git
+cd ML-Powered-CRM-Dashboard
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run Application
+
+```bash
+streamlit run app/app.py
+```
+
+---
 
 ## Screenshots
 
@@ -88,30 +133,19 @@ Provides:
 
 ![Customer Segmentation](Screenshots/customer_segmentation_prediction.png)
 
-## Installation
+---
 
-1. Clone the repository
+## Live Demo
 
-```bash
-git clone https://github.com/jayupadhyay27/ML-Powered-CRM-Dashboard.git
-```
+Streamlit Deployment:
+https://ml-powered-crm-dashboard.streamlit.app
 
-2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the application
-
-```bash
-streamlit run app/app.py
+---
 
 ## Author
 
-**Jay Upadhyay**
+Jay Upadhyay
 
 Computer Science Student
 
-Interested in Machine Learning, AI & Software development
-```
+Interested in Machine Learning, AI, and Software Development
