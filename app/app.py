@@ -1,6 +1,6 @@
 import streamlit as st
 import joblib
-model = joblib.load("models/Lead_Conversion_model.pkl")
+model = joblib.load("models/lead_Conversion_model.pkl")
 customer_model = joblib.load("models/customer_segmentation_model.pkl")
 sales_model= joblib.load("models/sales_forecasting_model.pkl")
 import plotly.express as px
